@@ -1,5 +1,4 @@
 from roman_numerals import to_roman
-import pytest
 
 def test_01_a_single_number():
     assert to_roman(1) == "I"
@@ -12,5 +11,11 @@ def test_03_odd_numerals():
 
 def test_04_all_edge_cases():
     assert to_roman(944) == 'CMXLIV'
+
+def test_05():
+    assert to_roman(999) == 'CMXCIX'
+
+def test_06():
+    assert to_roman(2549) == 'MMDXLIX'
     
-# add tests to cover different edge cases
+
